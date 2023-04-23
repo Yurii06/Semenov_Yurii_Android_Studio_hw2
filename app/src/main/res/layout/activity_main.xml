@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ic_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать!"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выполните вход или зарегистрируйтесь."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/loginEditText"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:paddingVertical="10dp"
+        android:hint="Введите вашу почту"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_register"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:hint="Введите вашу почту"
+        android:textSize="20dp"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/loginEditText"
+        android:layout_marginTop="50dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/gray"
+        android:id="@+id/bt_button"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+        android:layout_marginTop="20dp"
+        android:text="Войти"
+        app:cornerRadius="16dp"
+        android:layout_margin="20dp"
+        android:paddingVertical="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
